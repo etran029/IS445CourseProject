@@ -20,6 +20,7 @@ h1 {
 
 .alignleft {
     text-align:left;
+    margin-left: 30px;
 }
 
 .mepicture {
@@ -29,5 +30,6 @@ h1 {
 }
 
 div.aboutmebody {
-    width: 380px;
+    width: 400px;
+    margin-left: 40px;
 }
