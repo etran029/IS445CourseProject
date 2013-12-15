@@ -116,6 +116,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\AboutMe.css" />
     <Content Include="Content\Absolute.css" />
+    <Content Include="Content\Float.css" />
     <Content Include="Content\Index.css" />
     <Content Include="Content\mepicture.jpg" />
     <Content Include="Content\Static.css" />
@@ -169,6 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\FormatPhraseReverse.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Float.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
