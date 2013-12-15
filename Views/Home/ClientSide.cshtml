@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "ClientSide";
+}
+
+<h2>Client Side -- Phrase Reverse</h2>
+
+@using (Html.BeginForm("FormatPhraseReverse", "Home"))
+{
+  <label for="inputPhrase">Please input a phrase: </label>
+  <input type="text" name="inputPhrase" id="inputPhrase" value=""/>
+  <input type="submit" name="submit" value="submit" />
+}

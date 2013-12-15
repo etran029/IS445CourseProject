@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "WebForm";
+}
+
+<body>
+    <div id="page">
+            <hr id="hr1" />
+        </div>
+
+        <h2>Welcome to my Web Form</h2>
+        <h4>A demo form for hotel room reservation</h4>
+
+        <form id="form">
+            <fieldset id="customerInformation">
+                <legend>
+                    Customer Information
+                </legend>
+                <label>
+                    Full name: <input type="text" name="FirstName LastName" size="30" maxlength="100" require="require" />
+                </label>
+                <br />
+                <label>
+                    Email Address: <input type="text" name="Email" size="30" maxlength="100" require="require" />
+                </label>
+                <br />
+                <label>
+                    Phone: <input type="text" name="Phone" size="20" maxlength="40" require="require" />
+                </label>
+            </fieldset>
+            
+            <br />
+            
+            <fieldset id="roomInformation">
+                <legend>
+                    Room Information
+                </legend>
+                <label>
+                    Arrival Date: <input type="date" name="ArrivalDate" require="require" />
+                </label>
+                <br />
+                <label>
+                    Arrival Time: <input type="time" name="ArrivalTime" />
+                </label>
+                <br />
+                <label>
+                    Select a room type: 
+                    <select name="room" id="room">
+                        <option value="luxury">Luxury</option>
+                        <option value="standard">Standard</option>
+                        <option value="economic">Economic</option>
+                    </select>
+                </label>
+                <br />
+                <label>
+                    Number of nights (valid number is from 1 to 30): <input type="number" name="numberOfNights" min="1" max="30" />
+                </label>
+                <br />
+                <label>
+                    Number of guests (the maximum guests is 3): <input type="number" name="numberOfGuests" min="1" max="3" />
+                </label>
+            </fieldset>
+            
+            <br />
+            
+            <fieldset id="otherInformation">
+                <legend>
+                    Other Information
+                </legend>
+                <label>
+                    Promo Code: <input type="text" size="8" maxlength="4" pattern="[A-Za-z0-9]{4}" title="Four character code [a-z][A-Z][0-9]" />
+                </label>
+                <br />
+                <label>
+                    Special Note: <textarea name="specialNote" cols="40" rows="5">Enter your special notes here</textarea>
+                </label>
+            </fieldset>
+            <input type="reset" value="Clear form" />
+            <input type="submit" value="Request Reservation" />
+        </form>
+
+</body>

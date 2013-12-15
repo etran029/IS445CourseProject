@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<div id="header">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Index.css" rel="stylesheet" />
+    <h1>Eric Tran IS445 Course Project</h1>
+
+    <nav>
+	<ul>
+		<li><a href="#">@Html.ActionLink("Home", "Index")</a></li>
+		<li><a href="#">@Html.ActionLink("Form/Layout Demos", "Index")</a>
+			<ul>
+				<li><a href="#">@Html.ActionLink("Form Demo", "WebForm")</a></li>
+				<li><a href="#">Layout Demos</a>
+                    <ul>
+                        <li><a href="#">@Html.ActionLink("Static Demo", "Static")</a></li>
+                        <li><a href="#">@Html.ActionLink("Absolute Demo", "Absolute")</a></li>
+                        <li><a href="#">@Html.ActionLink("Float Demo", "Float")</a></li>
+                    </ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#">@Html.ActionLink("Client Side Demo", "ClientSide")</a></li>
+		<li><a href="#">@Html.ActionLink("Server Side Demo", "ServerSide")</a></li>
+        <li><a href="#">@Html.ActionLink("About Myself", "AboutMe")</a></li>
+	</ul>
+</nav>
+</div>
+
+<body>
+        @RenderBody()
+</body>
+    
+    <br />
+        <footer>
+            <address>
+                Eric Tran&copy; Contact Information
+                <a href="mailto:etran029@gmail.com">Email: etran029@gmail.com</a>
+                Phone: (714) 933-8543
+            </address>
+        </footer>
+
+</html>

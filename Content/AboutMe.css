@@ -1,0 +1,33 @@
+﻿body {
+	background:#fff;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+#hr1 {
+    height: 8px;
+    color: #00FF00;
+}
+
+.alignleft {
+    text-align:left;
+}
+
+.mepicture {
+    float: right;
+    height:350px;
+    width: 300px;
+}
+
+div.aboutmebody {
+    width: 380px;
+}
