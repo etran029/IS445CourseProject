@@ -62,11 +62,11 @@ namespace IS445.Controllers
 
           if (string.IsNullOrEmpty(inputNumber))
           {
-            return Content("Invalid input, please try again");
+            return View((object)"==Invalid input, please try again==");
           }
           else if (inputNumber.Length != 10)
           {
-              return Content("Incorrect amount of digits, please enter 10 digits");
+              return View((object)"==Incorrect amount of digits, please enter 10 digits==");
           }
           else
           {
@@ -87,18 +87,23 @@ namespace IS445.Controllers
           var phoneString = "(" + first + ") " + second + "-" + third + ".";
           return phoneString;
         }//end formatNumber
-
-
-
-
+        
         public ActionResult FormatPhraseReverse(string inputPhrase)
         {
             if (string.IsNullOrEmpty(inputPhrase))
             {
-                return Content("Invalid input, please try again");
+                var error = "==Invalid input, please try again==";
+                return View((object)error);
             }
             else
             {
+                //var s = "Hello world";
+                var words = inputPhrase;
+                
+                var result = String.Join(" ", words.Split(' ').Reverse());
+                return View((object)result);
+
+                /*
                 string[] words = inputPhrase.Split(' ');
 
                 string reverse = "";
@@ -109,8 +114,9 @@ namespace IS445.Controllers
                 }
 
                 return View((object)reverse);
+                */
             }
-        }
-
+        }//end FormatPhraseReverse
+        
     }
 }
